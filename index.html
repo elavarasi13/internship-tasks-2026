@@ -2,35 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <meta name="elavarasi" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<SCRIPT src="script.js"></SCRIPT>
+
 <body>
 
-    <h1>✨ My Image Gallery</h1>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
 
-    <div class="gallery">
-        <img src="mountain.jpg" onclick="openImage(0)">
-        <img src="beach.jpg" onclick="openImage(1)">
-        <img src="flower.jpg" onclick="openImage(2)">
-        <img src="sunset.jpg" onclick="openImage(3)">
-        <img src="forest.jpg" onclick="openImage(4)">
-        <img src="waterfall.jpg" onclick="openImage(5)">
-    </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <span class="close" onclick="closeImage()">&times;</span>
 
-        <button class="prev" onclick="prevImage()">&#10094;</button>
+    <!-- Home -->
+    <section id="home" class="hero">
 
-        <img id="lightbox-img">
+        <div>
+            <h1>Hello, I'm <span>elavarasi</span></h1>
 
-        <button class="next" onclick="nextImage()">&#10095;</button>
-    </div>
+            <h2>BCA Student & Frontend Developer</h2>
 
-<script src="script.js"></script>
+            <p>
+                Welcome to my personal portfolio website.
+                I love creating attractive and responsive websites.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h1>About Me</h1>
+
+        <div class="about-box">
+
+            <p>
+                I am a BCA student interested in web development.
+                I enjoy learning HTML, CSS and JavaScript.
+                My goal is to become a skilled frontend developer
+                and create user-friendly websites.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h1>My Skills</h1>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">SQL</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h1>My Projects</h1>
+
+        <div class="projects-container">
+
+            <div class="project">
+
+                <h2>Image Gallery</h2>
+
+                <p>
+                    A responsive image gallery created using
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h2>Calculator</h2>
+
+                <p>
+                    A basic calculator created using
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h2>Portfolio Website</h2>
+
+                <p>
+                    A personal responsive portfolio website
+                    showcasing my skills and projects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h1>Contact Me</h1>
+
+        <div class="contact-box">
+
+            <p>📧 Email: yourmail@gmail.com</p>
+
+            <p>📱 Phone: 9876543210</p>
+
+            <p>📍 Location: Madurai</p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 My Portfolio | All Rights Reserved</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
