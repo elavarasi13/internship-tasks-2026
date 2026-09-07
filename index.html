@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<SCRIPT src="script.js"></SCRIPT>
+<body>
+
+    <h1>✨ My Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="mountain.jpg" onclick="openImage(0)">
+        <img src="beach.jpg" onclick="openImage(1)">
+        <img src="flower.jpg" onclick="openImage(2)">
+        <img src="sunset.jpg" onclick="openImage(3)">
+        <img src="forest.jpg" onclick="openImage(4)">
+        <img src="waterfall.jpg" onclick="openImage(5)">
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeImage()">&times;</span>
+
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+
+        <img id="lightbox-img">
+
+        <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
